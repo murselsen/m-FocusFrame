@@ -1,0 +1,7 @@
+@media (min-width: 786px) and (max-width: 1023px) {
+  .page-button {
+    padding: 16px 58px;
+    width: 186px;
+    height: 60px;
+  }
+}

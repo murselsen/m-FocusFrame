@@ -1,0 +1,91 @@
+:root {
+  --black: rgba(18, 18, 18, 1);
+  --gray: rgba(29, 29, 29, 1);
+  --gradientColor1: rgba(6, 7, 7, 1);
+  --gradientColor2: rgba(29, 29, 29, 1);
+  --brown: rgba(190, 166, 158, 1);
+  --white: rgba(255, 255, 255, 1);
+}
+
+body {
+  font-family: "DM Sans", serif;
+  font-weight: 400;
+  font-style: normal;
+  background-color: var(--black);
+  color: var(--white);
+  padding: 20px;
+}
+
+.page-button {
+  width: 179px;
+  height: 46px;
+  padding: 14px 62px;
+  border-radius: 12px;
+  background-color: var(--white);
+  font-size: 14px;
+  font-weight: 700;
+  line-height: 18px;
+  text-decoration: none;
+  text-transform: uppercase;
+  color: var(--black);
+}
+
+.page-button:hover,
+.page-button:focus {
+  background-color: var(--gray);
+  color: var(--brown);
+}
+
+.page-header {
+  width: 100%;
+  height: 60px;
+  display: flex;
+}
+.container {
+  width: 100%;
+  margin: 0 20px;
+}
+.page-header .container {
+  border: 1px solid var(--gray);
+  padding: 15px 20px;
+  border-radius: 25px;
+  display: flex;
+}
+.page-header .container .navbar-menu {
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+}
+.page-header .container .navbar-menu .navbar-logo {
+  font-size: 20px;
+  font-weight: 700;
+  text-decoration: none;
+  color: var(--white);
+}
+.page-header .container .navbar-menu .navbar-menu-list {
+  display: none;
+}
+.page-header .container .navbar-menu .navbar-actions {
+  display: flex;
+  align-items: center;
+  gap: 14px;
+}
+
+.page-header .container .navbar-menu .navbar-actions .navbar-menu-button {
+  background-color: transparent;
+  fill: var(--brown);
+  cursor: pointer;
+  border: 0;
+}
+.page-header
+  .container
+  .navbar-menu
+  .navbar-actions
+  .navbar-menu-camera-button {
+  background-color: var(--gray);
+  padding: 8px;
+  border-radius: 50%;
+}
+.page-header .container .page-button {
+  display: none;
+}

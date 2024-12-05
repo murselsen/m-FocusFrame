@@ -3,11 +3,62 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,100..1000;1,9..40,100..1000&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/modern-normalize/3.0.1/modern-normalize.min.css"
+      integrity="sha512-q6WgHqiHlKyOqslT/lgBgodhd03Wp4BEqKeW6nNtlOY4quzyG3VoQKFrieaCeSnuVseNKRGpGeDU3qPmabCANg=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
     <link rel="stylesheet" href="./css/style.css" />
+    <link rel="stylesheet" href="./css/tablet.css" />
     <link rel="shortcut icon" href="favicon.png" type="image/x-icon" />
-    <title>FocusFrame</title>
+    <title>Focus.Frame</title>
   </head>
   <body>
-    <h1>FocusFrame</h1>
+    <header class="page-header">
+      <div class="container">
+        <nav class="navbar-menu">
+          <a href="./index.html" class="navbar-logo">Focus.Frame</a>
+
+          <ul class="navbar-menu-list">
+            <li class="navbar-menu-item">
+              <a href="#" class="navbar-menu-link">About Us</a>
+            </li>
+            <li class="navbar-menu-item">
+              <a href="#" class="navbar-menu-link">Our Courses</a>
+            </li>
+            <li class="navbar-menu-item">
+              <a href="#" class="navbar-menu-link">Our Mentors</a>
+            </li>
+            <li class="navbar-menu-item">
+              <a href="#" class="navbar-menu-link">Reviews</a>
+            </li>
+            <li class="navbar-menu-item">
+              <a href="#" class="navbar-menu-link">Contacts</a>
+            </li>
+          </ul>
+          <div class="navbar-actions">
+            <button class="navbar-menu-button navbar-menu-camera-button">
+              <svg width="16" height="16" class="navbar-menu-button-icon">
+                <use href="./images/icons.svg#camera"></use>
+              </svg>
+            </button>
+            <button class="navbar-menu-button navbar-menu-toggle">
+              <svg width="40" height="28" class="navbar-menu-toggle-icon">
+                <use href="./images/icons.svg#hamburger"></use>
+              </svg>
+            </button>
+          </div>
+        </nav>
+        <a href="#" class="page-button">Sign Up</a>
+      </div>
+    </header>
   </body>
 </html>
