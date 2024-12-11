@@ -12,7 +12,8 @@ h3,
 h4,
 h5,
 h6,
-p {
+p,
+ul {
   margin: 0;
   padding: 0;
 }
@@ -23,15 +24,18 @@ body {
   background-color: var(--black);
   color: var(--white);
   padding-top: 20px;
-  padding-inline: 20px;
+
   display: flex;
   flex-direction: column;
 }
 section {
   margin-top: 80px;
+  margin-inline: 20px;
 }
+
 .page-button {
   margin-top: 20px;
+  margin-inline: 20px;
   width: 179px;
   height: 46px;
   padding: 14px 62px;
@@ -54,7 +58,11 @@ section {
 .container {
   width: 100%;
 }
-
+.title-box {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
 .title {
   font-family: "DM Sans", serif;
   font-size: 28px;
@@ -124,6 +132,7 @@ section {
   display: none;
 }
 
+/* Hero Section */
 .hero {
   background-color: var(--gray);
   border-radius: 30px;
@@ -235,10 +244,28 @@ section {
 
 /* Block Section */
 .block {
-  padding: 20px;
+  padding-block: 40px;
   border-top: 1px solid var(--gray);
   border-bottom: 1px solid var(--gray);
-  width: 100vw;
+  position: relative;
+  width: 100%;
+  box-sizing: border-box;
+  overflow: hidden;
+  margin-inline: 0;
+}
+.block .title {
+  position: absolute;
+  top: 25%;
+  left: -10%;
+  text-align: center;
+  text-transform: uppercase;
+  font-size: 28px;
+  font-weight: 400;
+  line-height: 32px;
+  letter-spacing: -0.02em;
+  z-index: 2;
+  width: 130%;
+  transform: scale(1.4);
 }
 
 /* About Us Section */
@@ -286,9 +313,6 @@ section {
   gap: 28px;
 }
 
-.our-courses .container .course-list .course-item .course-item-header {
-  border: 1px solid white;
-}
 .our-courses .container .course-list .course-item .course-item-header .no {
   color: rgba(255, 255, 255, 0.4);
 }
@@ -315,4 +339,290 @@ section {
   line-height: 18px;
   letter-spacing: -0.02em;
   color: rgba(255, 255, 255, 0.5);
+}
+
+/* Our Mentors */
+.our-mentors .container {
+  width: 100%;
+  margin-top: 40px;
+}
+.our-mentors .container .mentor-list {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 40px;
+  list-style: none;
+}
+
+.our-mentors .container .mentor-list .mentor-item {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.our-mentors .container .mentor-list .mentor-item .mentor-profile {
+  background-color: #e0e0e0;
+  width: 180px;
+  height: 180px;
+  text-align: center;
+  border-radius: 50%;
+  clip-path: circle(50%);
+}
+
+.our-mentors .container .mentor-list .mentor-item .mentor-info {
+  margin: 16px 18px 0px;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  gap: 4px;
+  padding-inline: 13px;
+}
+
+/* Sign Up */
+.sign-up .container {
+  display: flex;
+  flex-direction: column;
+}
+.sign-up .container .content .form {
+  display: flex;
+  flex-direction: column;
+  margin-top: 40px;
+  gap: 8px;
+}
+.sign-up .container .content .form .form-input {
+  padding: 14px 18px;
+  border-radius: 12px;
+  background-color: transparent;
+  color: #ffffff;
+  border: 1px solid rgba(255, 255, 255, 0.2);
+}
+.sign-up .container .content .form textarea.form-input {
+  height: 120px;
+}
+.sign-up .container .content .form .form-input::placeholder {
+  color: #ffffff;
+}
+
+.sign-up .container .content .form .form-button {
+  outline: transparent;
+  box-shadow: none;
+  margin-top: 40px;
+  padding: 14px;
+  text-align: center;
+  border-radius: 12px;
+  text-transform: uppercase;
+  font-size: 16px;
+  font-weight: 700;
+  line-height: 20px;
+  cursor: pointer;
+  background-color: rgba(255, 255, 255, 0.4);
+  transition: background-color 500ms cubic-bezier(0.075, 0.82, 0.165, 1);
+}
+.sign-up .container .content .form .form-button:hover,
+.sign-up .container .content .form .form-button:focus {
+  background-color: rgba(255, 255, 255, 1);
+}
+.sign-up .container .content .form .description {
+  color: rgba(255, 255, 255, 0.5);
+  margin-top: 20px;
+}
+.sign-up .container .content .form .description > .link {
+  color: inherit;
+}
+.sign-up .container .media {
+  display: none;
+}
+
+/* Reviews */
+.reviews .container {
+  margin-top: 40px;
+}
+.reviews .container .content .reviews-list {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  list-style: none;
+}
+.reviews .container .content .reviews-list .reviews-item {
+  padding: 20px;
+  border-radius: 12px;
+  border: 1px solid rgba(255, 255, 255, 0.2);
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+.reviews .container .content .reviews-list .reviews-item .reviews-item-header {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  justify-content: space-between;
+}
+
+.reviews
+  .container
+  .content
+  .reviews-list
+  .reviews-item
+  .reviews-item-header
+  .profile {
+  display: flex;
+  gap: 10px;
+}
+
+.reviews
+  .container
+  .content
+  .reviews-list
+  .reviews-item
+  .reviews-item-header
+  .status {
+  margin: 0 66px;
+}
+
+.reviews
+  .container
+  .content
+  .reviews-list
+  .reviews-item
+  .reviews-item-header
+  .profile
+  .info {
+  display: flex;
+  flex-direction: column;
+  gap: 4px;
+}
+
+.reviews
+  .container
+  .content
+  .reviews-list
+  .reviews-item
+  .reviews-item-header
+  .profile
+  .info
+  .name {
+  font-size: 20px;
+  font-weight: 500;
+  line-height: 24px;
+}
+
+.reviews
+  .container
+  .content
+  .reviews-list
+  .reviews-item
+  .reviews-item-header
+  .profile
+  .info
+  .departman {
+  font-size: 12px;
+  font-weight: 400;
+  line-height: 16px;
+  letter-spacing: -0.02em;
+  color: #ffffff80;
+}
+
+/* Footer */
+.page-footer {
+  margin-top: 80px;
+  border: 1px solid #ffffff33;
+}
+.page-footer .container {
+  padding: 40px 20px;
+  display: flex;
+  flex-direction: column;
+  gap: 40px;
+}
+.page-footer .container .navbar-logo {
+  font-size: 20px;
+  font-weight: 700;
+  text-decoration: none;
+  color: var(--white);
+}
+.page-footer .container .footer-top .about .address {
+  margin-top: 16px;
+}
+.page-footer .container .footer-top .about .address-list {
+  list-style-type: none;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+.page-footer .container .footer-top .about .address-list .address-link {
+  color: #ffffff;
+  text-decoration: none;
+  font-style: normal;
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 18px;
+}
+
+.page-footer .container .footer-top .site-map {
+  margin-top: 40px;
+  display: inline-flex;
+  gap: 40px;
+}
+.page-footer .container .footer-top .site-map .site-list {
+  list-style-type: none;
+  display: flex;
+  flex-direction: column;
+  gap: 14px;
+}
+.page-footer .container .footer-top .site-map .site-list .site-link {
+  color: #ffffff;
+  text-transform: uppercase;
+  text-decoration: none;
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 18.23px;
+}
+.page-footer .container .footer-top .subscribe-form {
+  margin-top: 75px;
+  width: 100%;
+}
+.page-footer .container .footer-top .subscribe-form .form {
+  display: flex;
+  gap: 8px;
+  width: 100%;
+}
+
+.page-footer .container .footer-top .subscribe-form .form .form-input {
+  border-radius: 12px;
+  padding: 20px 18px;
+  width: 90%;
+  border: 0;
+}
+.page-footer .container .footer-top .subscribe-form .form .form-input:focus {
+  outline: 0;
+}
+
+.page-footer
+  .container
+  .footer-top
+  .subscribe-form
+  .form
+  .form-input::placeholder {
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 20px;
+  color: #121212;
+}
+.page-footer .container .footer-top .subscribe-form .form .form-button {
+  width: 60px;
+  height: 60px;
+  padding: 18px;
+  border-radius: 12px;
+  font-size: 20px;
+  font-weight: 400;
+  line-height: 24px;
+  text-align: center;
+  background-color: #1d1d1d;
+  color: #ffffff;
+  border: 0;
+  cursor: pointer;
+}
+
+.page-footer .container .footer-bottom {
+  display: flex;
+  justify-content: space-between;
 }
