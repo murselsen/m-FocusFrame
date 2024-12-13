@@ -26,7 +26,6 @@
       <div class="container">
         <nav class="navbar-menu">
           <a href="./index.html" class="navbar-logo">Focus.Frame</a>
-
           <ul class="navbar-menu-list">
             <li class="navbar-menu-item">
               <a href="#" class="navbar-menu-link">About Us</a>
@@ -45,7 +44,10 @@
             </li>
           </ul>
           <div class="navbar-actions">
-            <button class="navbar-menu-button navbar-menu-camera-button">
+            <button
+              type="button"
+              class="navbar-menu-button navbar-menu-camera-button"
+            >
               <svg width="16" height="16" class="navbar-menu-button-icon">
                 <use href="./images/icons.svg#camera"></use>
               </svg>
@@ -466,5 +468,29 @@
         </div>
       </div>
     </footer>
+    <div class="sidebar-menu" id="sidebarMenu">
+      <button type="button" class="sidebar-menu-close" onclick="">
+        <svg width="32" height="32" class="sidebar-menu-close-icon">
+          <use href="./images/icons.svg#close"></use>
+        </svg>
+      </button>
+      <ul class="sidebar-menu-list">
+        <li class="sidebar-menu-item">
+          <a href="#" class="sidebar-menu-link active">About Us</a>
+        </li>
+        <li class="sidebar-menu-item">
+          <a href="#" class="sidebar-menu-link">Our Courses</a>
+        </li>
+        <li class="sidebar-menu-item">
+          <a href="#" class="sidebar-menu-link">Our Mentors</a>
+        </li>
+        <li class="sidebar-menu-item">
+          <a href="#" class="sidebar-menu-link">Reviews</a>
+        </li>
+        <li class="sidebar-menu-item">
+          <a href="#" class="sidebar-menu-link">Contacts</a>
+        </li>
+      </ul>
+    </div>
   </body>
 </html>
