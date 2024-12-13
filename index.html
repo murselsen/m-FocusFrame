@@ -52,7 +52,10 @@
                 <use href="./images/icons.svg#camera"></use>
               </svg>
             </button>
-            <button class="navbar-menu-button navbar-menu-toggle">
+            <button
+              class="navbar-menu-button navbar-menu-toggle"
+              onclick="document.getElementById('sidebarMenu').style.display = 'block'"
+            >
               <svg width="40" height="28" class="navbar-menu-toggle-icon">
                 <use href="./images/icons.svg#hamburger"></use>
               </svg>
@@ -469,7 +472,11 @@
       </div>
     </footer>
     <div class="sidebar-menu" id="sidebarMenu">
-      <button type="button" class="sidebar-menu-close" onclick="">
+      <button
+        type="button"
+        class="sidebar-menu-close"
+        onclick="document.getElementById('sidebarMenu').style.display = 'none'"
+      >
         <svg width="32" height="32" class="sidebar-menu-close-icon">
           <use href="./images/icons.svg#close"></use>
         </svg>
