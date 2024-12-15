@@ -1,4 +1,4 @@
-@media (min-width: 1024px) {
+@media (min-width: 1280px) {
   .container {
     width: 100%;
   }
@@ -67,14 +67,18 @@
   }
   .hero .container {
     flex-direction: row;
-    justify-content: center;
-    /* gap: 130px; */
+    justify-content: space-between;
+    gap: 130px;
     padding-top: 80px;
     padding-left: 50px;
     padding-right: 100px;
   }
   .hero .container .content {
     width: 100%;
+    padding-bottom: 50px;
+  }
+  .hero .container .content .score {
+    margin-top: 136px;
   }
   .hero .container .content .title {
     font-size: 64px;
@@ -97,10 +101,9 @@
     line-height: 68px;
     letter-spacing: -0.04em;
   }
-  .hero .container .media {
-    margin-right: 100px;
+  .about-us .container .media {
+    width: 35%;
   }
-
   .about-us .container {
     height: auto;
     flex-direction: row;
@@ -109,5 +112,57 @@
   .about-us .container .content {
     display: flex;
     flex-direction: row;
+    width: 65%;
+  }
+  .about-us .container .content .description {
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 20px;
+    letter-spacing: -0.02em;
+  }
+
+  .our-courses .title-box {
+    flex-direction: row;
+    gap: 410px;
+  }
+  .our-courses .title-box .title {
+    display: inline-flex;
+  }
+  .our-courses .title-box .title .title-span {
+    margin-left: 10px;
+  }
+
+  .our-mentors .container .mentor-list {
+    flex-direction: row;
+  }
+
+  .sign-up .container {
+    flex-direction: row;
+    gap: 60px;
+  }
+  .sign-up .container .content {
+    width: calc(50% - 60px);
+  }
+  .sign-up .container .media {
+    display: block;
+    width: 50%;
+    display: flex;
+    align-items: end;
+    gap: 20px;
+  }
+  .sign-up .container .media .img-box {
+    background-color: var(--brown);
+    border-radius: 1000px;
+  }
+  .sign-up .container .media .img-box#videoCamera {
+    padding: 156px 50px 88px 50px;
+    background-color: var(--gray);
+  }
+
+  .sign-up .container .media .img-box#cameraLens {
+    padding: 76px 19px 62px 19px;
+  }
+  .sign-up .container .media .img-box#cameraLens img {
+    transform: rotate(-90deg);
   }
 }
