@@ -29,8 +29,7 @@ body {
   flex-direction: column;
 }
 section {
-  margin-top: 80px;
-  margin-inline: 20px;
+  margin: 80px 20px;
 }
 
 .page-button {
@@ -176,6 +175,7 @@ section {
 }
 .hero .container .content .score {
   display: flex;
+  flex-wrap: wrap;
   gap: 40px;
 }
 
@@ -327,6 +327,7 @@ section {
   font-size: 28px;
   font-weight: 500;
   line-height: 32px;
+  padding-right: 45px;
 }
 
 .our-courses
@@ -339,6 +340,7 @@ section {
   line-height: 18px;
   letter-spacing: -0.02em;
   color: rgba(255, 255, 255, 0.5);
+  padding-right: 32px;
 }
 
 /* Our Mentors */
@@ -539,6 +541,12 @@ section {
   text-decoration: none;
   color: var(--white);
 }
+
+.page-footer .container .footer-top {
+  display: flex;
+  flex-direction: column;
+}
+
 .page-footer .container .footer-top .about .address {
   margin-top: 16px;
 }
