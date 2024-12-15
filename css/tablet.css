@@ -1,4 +1,4 @@
-@media (min-width: 786px) and (max-width: 1023px) {
+@media (min-width: 768px) and (max-width: 1023px) {
   .title {
     font-size: 48px;
     font-weight: 500;
@@ -29,6 +29,10 @@
     font-size: 18px;
     font-weight: 700;
     line-height: 28px;
+    text-align: center;
+    padding-block: 16px;
+    padding-inline: 40px;
+    height: 60px;
   }
   .hero {
     margin-top: 40px;
@@ -87,11 +91,7 @@
     margin: 232px 64px;
   }
 
-  .page-header
-    .container
-    .navbar-menu
-    .navbar-actions
-    .navbar-menu-camera-button {
+  .navbar-menu-camera-button {
     display: none;
   }
   .hero .container {
