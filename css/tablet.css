@@ -8,12 +8,6 @@
     line-height: 54px;
     letter-spacing: -0.04em;
   }
-  .title .tittple .page-button {
-    padding: 16px;
-    width: 186px;
-    height: 60px;
-    text-align: center;
-  }
 
   .description {
     font-size: 16px;
@@ -43,7 +37,7 @@
     text-align: center;
     padding-block: 16px;
     padding-inline: 40px;
-    height: 60px;
+    min-width: 186px;
   }
   .hero {
     margin-top: 40px;

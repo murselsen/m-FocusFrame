@@ -1,2 +1,113 @@
 @media (min-width: 1024px) {
+  .container {
+    width: 100%;
+  }
+  .page-header {
+    width: auto;
+    margin-left: 100px;
+    margin-right: 100px;
+  }
+  .page-header .container {
+    display: flex;
+    gap: 14px;
+    align-items: center;
+    border: 0;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  .page-header .container .navbar-menu {
+    padding: 21px 50px;
+    /* border: 1px solid var(--gray); */
+    border: 1px solid var(--white);
+    border-radius: 25px;
+    gap: 97px;
+  }
+  .page-header .container .navbar-menu .navbar-actions {
+    display: none;
+  }
+
+  .page-header .container .navbar-menu .navbar-menu-list {
+    display: flex;
+    list-style: none;
+    gap: 28px;
+    align-items: center;
+  }
+  .page-header
+    .container
+    .navbar-menu
+    .navbar-menu-list
+    .navbar-menu-item
+    .navbar-menu-link {
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 18.23px;
+    text-decoration: none;
+    text-transform: uppercase;
+    color: #ffffff;
+  }
+
+  .page-header .container .page-button {
+    display: block;
+    padding: 16px 84px;
+    border-radius: 12px;
+    background-color: var(--white);
+    text-align: center;
+    text-decoration: none;
+    text-transform: uppercase;
+    color: var(--black);
+    font-size: 18px;
+    font-weight: 700;
+    line-height: 28px;
+    margin: 0;
+    min-width: 240px;
+  }
+  section {
+    margin: 80px 100px;
+  }
+  .hero .container {
+    flex-direction: row;
+    justify-content: center;
+    /* gap: 130px; */
+    padding-top: 80px;
+    padding-left: 50px;
+    padding-right: 100px;
+  }
+  .hero .container .content {
+    width: 100%;
+  }
+  .hero .container .content .title {
+    font-size: 64px;
+    font-weight: 500;
+    line-height: 68px;
+    letter-spacing: -0.04em;
+    max-width: 583px;
+  }
+  .hero .container .content .description {
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 18px;
+    letter-spacing: -0.02em;
+    max-width: 418px;
+  }
+  .hero .container .content .title .title-span {
+    font-size: 64px;
+    font-style: italic;
+    font-weight: 400;
+    line-height: 68px;
+    letter-spacing: -0.04em;
+  }
+  .hero .container .media {
+    margin-right: 100px;
+  }
+
+  .about-us .container {
+    height: auto;
+    flex-direction: row;
+    gap: 40px;
+  }
+  .about-us .container .content {
+    display: flex;
+    flex-direction: row;
+  }
 }
