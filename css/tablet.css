@@ -1,7 +1,148 @@
-@media (min-width: 786px) and (max-width: 1023px) {
-  .page-button {
-    padding: 16px 58px;
-    width: 186px;
-    height: 60px;
+@media (min-width: 768px) and (max-width: 1279px) {
+  section {
+    margin: 100px 32px;
+  }
+  .title {
+    font-size: 48px;
+    font-weight: 500;
+    line-height: 54px;
+    letter-spacing: -0.04em;
+  }
+
+  .description {
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 20px;
+    letter-spacing: -0.02em;
+  }
+
+  .page-header .container {
+    display: flex;
+    gap: 14px;
+    align-items: center;
+    border: 0;
+    box-sizing: border-box;
+  }
+  .page-header .container .navbar-menu {
+    border: 1px solid var(--gray);
+    padding: 15px 20px;
+    border-radius: 25px;
+  }
+  .page-header .container .page-button {
+    display: block;
+    margin: 0;
+    font-size: 18px;
+    font-weight: 700;
+    line-height: 28px;
+    text-align: center;
+    padding-block: 16px;
+    padding-inline: 40px;
+    min-width: 186px;
+  }
+  .hero {
+    margin-top: 40px;
+  }
+  .about-us .container {
+    gap: 50px;
+  }
+  .about-us .container .content {
+    flex-direction: row;
+    gap: 40px;
+    margin-right: 104px;
+  }
+
+  .our-courses .title-box {
+    flex-direction: row;
+    gap: 58px;
+  }
+  .our-courses .title-box .title {
+    min-width: 265px;
+    font-size: 48px;
+    font-weight: 500;
+    line-height: 54px;
+    letter-spacing: -0.04em;
+  }
+  .our-courses .title-box .title .title-span {
+    font-size: 48px;
+    letter-spacing: -0.04em;
+  }
+  .our-courses .container {
+    margin-inline: auto;
+  }
+  .our-courses .container .course-list {
+    flex-direction: row;
+    flex-wrap: wrap;
+    gap: 20px;
+  }
+
+  .our-courses .container .course-list .course-item {
+    width: 342px;
+  }
+
+  .our-mentors .container .mentor-list {
+    flex-direction: row;
+    flex-wrap: wrap;
+    column-gap: 100px;
+    row-gap: 93px;
+    justify-content: center;
+  }
+
+  .sidebar-menu {
+    width: 480px;
+    height: 100%;
+    display: none;
+  }
+  .sidebar-menu .sidebar-menu-list {
+    margin: 232px 64px;
+  }
+
+  .navbar-menu-camera-button {
+    display: none;
+  }
+  .hero .container {
+    padding: 64px 32px;
+  }
+  .hero .container .content {
+    padding-right: 155px;
+  }
+  .hero .container .content .title {
+    font-size: 60px;
+    font-weight: 500;
+    line-height: 64px;
+    letter-spacing: -0.04em;
+  }
+  .hero .container .content .title .title-span {
+    font-size: 60px;
+    font-style: italic;
+    font-weight: 400;
+    line-height: 64px;
+    letter-spacing: -0.04em;
+  }
+
+  .sign-up {
+    margin-right: 288px;
+  }
+  .reviews .container {
+    padding: 0 32px;
+  }
+  .page-footer {
+    margin-top: 0;
+  }
+  .page-footer .container .footer-top {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: flex-start;
+    gap: 50px;
+  }
+  .page-footer .container .footer-top .about {
+    min-width: 152px;
+  }
+  .page-footer .container .footer-top .subscribe-form {
+    margin-top: 0;
+    width: fit-content;
+  }
+  .page-footer .container .footer-top .site-map {
+    margin-top: 0;
   }
 }
